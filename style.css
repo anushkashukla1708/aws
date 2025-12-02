@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+    padding: 0;
+}
+.navbar{
+    height:  70 px;
+    width: 100vw;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50 px;
+    width: 100;
+}
+.logo{
+   
+    background-image: url("https://www.dailyexcelsior.com/wp-content/uploads/2024/06/amozone.png");
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+}
+.border{
+    border: 2px solid transparent;
+}
+.border:hover{
+    border: 2px solid white;
+}
+.add1{
+    font-size: 0.8rem;
+    color:grey;
+    margin-left: 15 px;
+
+}
+.add2{
+    font-size: 1 rem;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+    align-items: center;
+    
+}
+.navsearch{
+    display:flex;
+    width:620 px;
+    height: 40 px;
+    border-radius: 3px;
+    
+    justify-content: space-evenly;
+}
+.navsearch:hover{
+    border:2px solid orange;
+}
+.searchselect{
+    background-color: grey;
+    width:50 px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border:none;
+
+
+}
+.searchinput{
+    width: 500px;
+    font-size:  1rem;
+
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    background-color: darkgoldenrod;
+     border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+span{
+    font-size: 0.7rem;
+}
+.navsecond{
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+.navcart i{
+     font-size: 30px;
+}
+.navcart{
+    font-size:0.84rem ;
+    font-weight: 700;
+}
+.panel{
+    height: 40px;
+    width:100vw;
+    background-color: #222f3d;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panelall{
+    color:azure;
+}
+.panelops p{
+    display:inline;
+    margin:10px;
+    color:azure;
+}
+.panelops{
+    width:70%;
+    font-size: 0.8rem;
+}
+.paneldeals{
+    font-size: .9rem;
+    font-weight: 700;
+    color: azure;
+}
+.hero{
+    background-image:url('https://m.media-amazon.com/images/I/71SRwYaVx3L._SX3000_.jpg');
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.heromessage{
+    background-color: white;
+    color: black;
+    font-weight: 400px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    width:80%;
+    margin-bottom: 80px;
+}
+.heromessage a{
+    color:rgb(15, 92, 144);
+}
+.shop{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    width:100vw;
+    background-color: rgb(7, 148, 101);
+    flex-wrap: wrap;
+}
+.box{
+    height: 340px;
+    width: 20%;
+    border: 2px solid black;
+    justify-content: space-evenly;
+    background-color: aliceblue;
+    padding:20px 0px 15px 15px;
+}
+.boximg{
+    height: 270px;
+    width: 200px;
+    background-size:cover ;
+    
+    
+}
+.boxcontent{
+    margin-left: 10px;
+    margin-right:10px ;
+    color: rgb(48, 94, 187);
+}
+footer{
+    margin-top: 17px;
+    height: 240px;
+    width: 100vw;
+}
+.footpanel1{
+    background-color: rgb(14, 14, 61);
+    color: white;
+    height: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.6rem;
+}
+.footpanel2{
+    background-color: #222f3d;
+    color: white;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 15px;
+}
+ul a{
+    display:block;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.footpanel3{
+    background-color: #19232d;
+    height: 100px;
+    width: 100vw;
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footpanel4{
+    background-color: black;
+    color:white;
+    height: 100px;
+}
+.pages{
+    font-size: 0.7rem;
+    text-align: center;
+    padding-top:20px ;
+}
+.copyright{
+    font-size:0.8rem;
+    text-align: center;
+}
