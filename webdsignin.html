@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script>
+        function data(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n3").value;
+        if(a==""|| b==""){
+            alert("All are mandatory");
+            return false;
+        }
+        else if(isNaN(b)){
+        alert("only number allowed");
+        return false;
+        }
+        else if(b.length<10|| b.length>10){
+            alert("only 10 digit number allowed");
+        return false;
+
+        }
+        else{
+            return true ;
+        }
+    }
+
+
+    </script>
+        <link rel="stylesheet" href="signin.css" >   
+</head>
+<body bg color:light blue>
+
+    <div class="login">
+<h1>Login@Uptrend</h1>
+<div class="details">
+<form onsubmit="return data()">
+FIRST NAME:
+<Input type="text"placeholder="Enter First name" id="n1">
+LAST NAME:
+<input type="text"placeholder="Enter Last name" id="n2">
+<br></br>
+
+EMAIL ID:
+<input type="text"placeholder="Enter Email.id">
+<br></br>
+MOBILE NUMBER:
+<input type ="number" placeholder="Enter mobile.no" id="n3">(10 digit number)<br></br>
+GENDER:
+<input type="radio" name="gender"value="Male">Male
+<input type="radio" name="gender"value="Female">Female
+<br></br>
+
+
+COUNTRY:
+<input type= "text"placeholder="India"><br></br>
+
+<input type="Submit"value="Submit"> 
+</div>
+</div>
+</form>
+<div class=" box">
+            
+            <div class="boxcontent">
+            <div class="boximg" style="background-image: url('https://thumbs.dreamstime.com/b/green-arrow-candlestick-uptrend-abstract-background-green-arrow-group-bar-chart-show-market-trend-to-uprise-287216964.jpg')" >
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>

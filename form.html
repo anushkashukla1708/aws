@@ -1,0 +1,150 @@
+<html>
+<head>
+    <script>
+        function data(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n3").value;
+        if(a==""|| b==""){
+            alert("All are mandatory");
+            return false;
+        }
+        else if(isNaN(b)){
+        alert("only number allowed");
+        return false;
+        }
+        else if(b.length<10|| b.length>10){
+            alert("only 10 digit number allowed");
+        return false;
+
+        }
+        else{
+            return true ;
+        }
+    }
+
+
+    </script>
+</head>
+<body bg color:light blue>
+<header>
+<h1>Student Registration form</h1>
+</header>
+<form onsubmit="return data()" action="abc.html">
+FIRST NAME:
+<Input type="text"placeholder="Enter First name" id="n1">
+LAST NAME:
+<input type="text"placeholder="Enter Last name" id="n2">
+<br></br>
+DATE OF BIRTH:
+<select name="Day:">
+<option value="Day">Day:</option>
+<option value="monday">Monday</option>
+<option value="tuesday">Tuesday</option>
+<option value="wednesday">Wednesday</option>
+<option value="thursday">Thursday</option>
+<option value="friday">Friday</option>
+<option value="saturday">Saturday</option>
+<option value="sunday">Sunday</option>
+</select>
+<select name="Month:">
+<option value="jan">Month:</option>
+<option value="feb">feb</option>
+<option value="march">march</option>
+<option value="april">april</option>
+<option value="may">may</option>
+<option value="june">june</option>
+<option value="july">july</option>
+<option value="august">august</option>
+<option value="sep">sep</option>
+<option value="oct">oct</option>
+<option value="nov">nov</option>
+<option value="dec">dec</option>
+</select>
+<select name="Year:">
+<option value="2005">Year:</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<option value="2008">2008</option>
+<option value="2009">2009</option>
+<option value="2010">2010</option>
+<option value="2011">2011</option>
+<option value="2012">2012</option>
+</select><br></br>
+EMAIL ID:
+<input type="text"placeholder="Enter Email.id">
+<br></br>
+MOBILE NUMBER:
+<input type ="number" placeholder="Enter mobile.no" id="n3">(10 digit number)<br></br>
+GENDER:
+<input type="radio" name="gender"value="Male">Male
+<input type="radio" name="gender"value="Female">Female
+<br></br>
+ADDRESS:
+<input type= "address"placeholder="Enter your address">(max 30 characters a-z and A-X)
+<br></br>
+STATE:
+<input type= "text"placeholder="Enter your State">(max 30 characters a-z and A-X)
+<br></br>
+PIN CODE:
+<input type="number"placeholder="Enter pin code">
+(6 digit number)<br></br>
+COUNTRY:
+<input type= "text"placeholder="India"><br></br>
+HOBBIES:
+Drawing<input type="checkbox"value="drawing">
+Singing<input type="checkbox"value="singing">
+Dancing<input type="checkbox"value="dancing">
+Sketching<input type="checkbox"value="sketching"><br></br>
+others<input type="checkbox"value="others"><input type ="text"><br></br>
+QUALIFICATION:
+<table>
+<thead>
+<tr>
+<th> SI.NO.Examination</th>
+<th> Board</th>
+<th> Percentage</th>
+<th> Year of Passing</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Class X</td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Class XII</td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Graduation</td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Masters</td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+<td><input type ="text"></td>
+</tr>
+</tbody>
+
+</table>
+COURSES APPLIED FOR:
+<input type="radio" name="COURSE"value="BCA">BCA
+<input type="radio" name="COURSE"value="B.Com">B.Com
+<input type="radio" name="COURSE"value="B.Sc">B.Sc
+<input type="radio" name="COURSE"value="B.A">B.A
+<br></br>
+<input type="reset"value="Reset"> 
+<input type="Submit"value="Submit"> 
+</form>
+</body>
+</html>

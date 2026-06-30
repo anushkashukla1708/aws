@@ -1,0 +1,26 @@
+*{
+    
+    justify-content:center;
+    align-items:flex-end;
+
+    width: 200px;
+    background-color: blanchedalmond;
+    background-image: url('https://t3.ftcdn.net/jpg/03/55/60/70/360_F_355607062_zYMS8jaz4SfoykpWz5oViRVKL32IabTP.jpg');
+    
+
+}
+
+.login{
+    position: relative;
+    top: 30px;
+    left: 520px;
+    font-weight: 700;
+    font-style: italic;
+    
+}
+.deails{
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center ;
+    font-size: medium;
+}

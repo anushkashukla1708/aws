@@ -1,0 +1,101 @@
+<html>
+<head>
+    <script>
+        function data(){
+        var a=document.getElementById("n1").value;
+        var b=document.getElementById("n3").value;
+         var c=document.getElementById("n4").value;
+        var d=document.getElementById("n7").value;
+         var e=document.getElementById("n8").value;
+        if(a==""|| b==""||c==""|| d==""|| e==""){
+            alert("All are mandatory");
+            return false;
+        }
+        else if(isNaN(b)){
+        alert("only number allowed");
+        return false;
+        }
+        else if(b.length<10|| b.length>10){
+            alert("only 10 digit number allowed");
+        return false;
+
+        }
+        else{
+            return true ;
+        }
+function validateForm() {
+    
+    const salaryInput = parseFloat(document.getElementById("n4").value); // Use parseFloat for numbers
+    const resumeInput = document.getElementById("n8");
+    
+    const minSalary = 50000;
+    const maxSalary = 500000;
+    const maxResumeSizeMB = 2;
+
+    if (isNaN(salaryInput) || salaryInput < minSalary || salaryInput > maxSalary) {
+        alert("Salary must be between $" + minSalary + " and $" + maxSalary + ".");
+        return false;
+    }
+
+    if (resumeInput.files.length > 0) {
+        const file = resumeInput.files[0];
+        const fileSizeMB = file.size / (1024 * 1024); 
+
+        if (fileSizeMB > maxResumeSizeMB) { 
+            alert("The resume file size (" + fileSizeMB.toFixed(2) + "MB) exceeds the maximum allowed size of " + maxResumeSizeMB + "MB. Please upload a smaller file.");
+            return false;
+        }
+        
+    }
+
+    
+    return true;
+}
+    
+
+
+    </script>
+        <link rel="stylesheet" href="jobapplication.css" >   
+</head>
+<body bg color:light blue>
+
+    <div class="login">
+<h1>JOB APPLICATION</h1>
+<div class="details">
+<form onsubmit="return data()"action="abc.html">
+FIRST NAME:
+<Input type="text"placeholder="Enter First name" id="n1">
+LAST NAME:
+<input type="text"placeholder="Enter Last name" id="n2">
+<br></br>
+
+EMAIL ID:
+<input type="text"placeholder="Enter Email.id">
+<br></br>
+MOBILE NUMBER:
+<input type ="number" placeholder="Enter mobile.no" id="n3">(10 digit number)<br></br>
+GENDER:
+<input type="radio" name="gender"value="Male">Male
+<input type="radio" name="gender"value="Female">Female
+<br></br>
+
+SALARY:
+<input type ="number" placeholder="Ranging from 50000 to 500000" id="n4"><br></br>
+POSITION:
+<input type= "text"id="n7"><br></br>
+UPLOAD YOUR RESUME:
+<input type= "file"id="n8"><br></br>
+<input type="Submit"value="Submit"> 
+</div>
+</div>
+</form>
+<div class=" box">
+            
+            <div class="boxcontent">
+            <div class="boximg" style="background-image: url('https://thumbs.dreamstime.com/b/green-arrow-candlestick-uptrend-abstract-background-green-arrow-group-bar-chart-show-market-trend-to-uprise-287216964.jpg')" >
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>
